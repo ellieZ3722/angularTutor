@@ -1,0 +1,36 @@
+
+
+<div class="flex-container">
+  <div class="center">
+    <h5 class="title"> 料理を作りましょう！！</h5>
+
+    <div class="flex-containerButton">
+      <button class="btn btn-primary" (click)="eggIn()"> 鸡蛋 </button>
+      <button class="btn btn-primary" (click)="riceIn()"> 米饭 </button>
+      <button class="btn btn-primary" (click)="tomatoIn()"> 西红柿 </button>
+      <button class="btn btn-primary" (click)="cheeseIn()"> 奶酪 </button>
+      <button class="btn btn-primary" (click)="noriIn()"> 海苔 </button>
+      <button class="btn btn-primary" (click)="fishIn()"> 鱼 </button>
+      <button class="btn btn-primary" (click)="meatIn()"> 排骨 </button>
+      <button class="btn btn-primary" (click)="sugarIn()"> 冰糖 </button>
+    </div>
+
+    <button class="btn btn-outline-primary btn-lg" (click)="cook()"> COOOOOOOK!! </button>
+    <hr>
+
+    <h5 style="color: sandybrown"> Basket: </h5>
+    <div class="flex-basket">
+      <div *ngIf="egg"> 鸡蛋 </div>
+      <div *ngIf="rice"> 米饭 </div>
+      <div *ngIf="tomato"> 西红柿 </div>
+      <div *ngIf="cheese"> 奶酪 </div>
+      <div *ngIf="nori"> 海苔 </div>
+      <div *ngIf="fish"> 鱼 </div>
+      <div *ngIf="meat"> 排骨 </div>
+      <div *ngIf="sugar"> 冰糖 </div>
+    </div>
+
+    <div class="font-weight-bolder result" *ngIf="cookbutton"> You've made {{ dish }} </div>
+
+  </div>
+</div>
